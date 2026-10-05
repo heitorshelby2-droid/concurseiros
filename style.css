@@ -1,24 +1,172 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edital de Inscrição</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
 
-  <header class="header">
-    <a href="index.html" class="btn-voltar">❮ VOLTAR AO PORTAL</a>
-    <h1>Edital de Inscrição</h1>
-  </header>
+body {
+  background-color: #f4f6f9;
+  color: #333333;
+}
 
-  <main class="content">
-    <div class="card">
-      <h3>Informações do Edital</h3>
-      <p>Aqui você coloca todas as informações, regras e documentos sobre o edital.</p>
-    </div>
-  </main>
+/* Cabeçalho */
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid #e2e8f0;
+}
 
-</body>
-</html>
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  font-size: 28px;
+}
+
+.sub-title {
+  font-size: 10px;
+  color: #718096;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: block;
+}
+
+.main-title {
+  font-size: 16px;
+  color: #1a202c;
+  font-weight: 700;
+}
+
+.lock-btn {
+  background: none;
+  border: 1px solid #e2e8f0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Banner azul escuro */
+.hero-banner {
+  background: linear-gradient(180deg, #0f2b48 0%, #173d66 100%);
+  color: #ffffff;
+  padding: 24px 20px 32px 20px;
+}
+
+.back-link {
+  color: #cbd5e0;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.section-tag {
+  color: #d69e2e;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.hero-desc {
+  font-size: 14px;
+  color: #e2e8f0;
+  line-height: 1.5;
+}
+
+/* Container de Conteúdo */
+.container {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+.status-card {
+  border-left: 4px solid #d69e2e;
+}
+
+.status-title {
+  color: #d69e2e;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.status-desc {
+  color: #4a5568;
+  font-size: 13px;
+}
+
+.action-card {
+  border: 1px solid #e2e8f0;
+}
+
+.card-icon {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #0f2b48;
+  margin-bottom: 8px;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: #718096;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+/* Botões */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  background-color: #d69e2e;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #0f2b48;
+  border: 1px solid #e2e8f0;
+}

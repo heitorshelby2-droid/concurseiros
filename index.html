@@ -8,29 +8,47 @@
 </head>
 <body>
 
-  <div class="top-bar">
-    <p>AMBIENTE DE SIMULAÇÃO - Portal Fictício</p>
-  </div>
-
-  <header class="header">
+  <!-- CABEÇALHO -->
+  <header class="navbar">
     <div class="logo-area">
-      <h1>Seu Portal</h1>
+      <div class="logo-icon">🛡️</div>
+      <div>
+        <span class="sub-title">PORTAL INSTITUCIONAL</span>
+        <h1 class="main-title">Concurseiros Brasil</h1>
+      </div>
     </div>
+    <button class="lock-btn">🔒</button>
   </header>
 
-  <section class="hero">
-    <h2>Bem-vindo ao Portal</h2>
-    <p>Consulte seleções, serviços e informações do portal.</p>
+  <!-- BANNER ESCURO -->
+  <section class="hero-banner">
+    <a href="#" class="back-link">❮ VOLTAR AO PORTAL</a>
+    <div class="section-tag">
+      <span>🛡️</span> INGRESSO NA CORPORAÇÃO
+    </div>
+    <h2 class="hero-title">Edital de Seleção</h2>
+    <p class="hero-desc">Consulte o edital vigente, faça a sua inscrição, realize a prova objetiva e acompanhe todas as etapas do concurso.</p>
   </section>
 
-  <main class="content">
-    <div class="card">
-      <span class="badge">EDITAL ABERTO</span>
-      <h3>Edital de Inscrição</h3>
-      <p>Acesse o edital completo e faça a sua inscrição.</p>
-      <!-- O botão abaixo leva para a página edital.html -->
-      <a href="edital.html" class="btn">ACESSAR EDITAL E INSCRIÇÃO ➔</a>
+  <!-- CONTEÚDO PRINCIPAL (CARDS) -->
+  <main class="container">
+    
+    <!-- CARD CONCURSO FECHADO -->
+    <div class="card status-card">
+      <h3 class="status-title">CONCURSO FECHADO</h3>
+      <p class="status-desc">As datas serão publicadas pela comissão responsável.</p>
     </div>
+
+    <!-- CARD FAÇA A PROVA ONLINE -->
+    <div class="card action-card">
+      <div class="card-icon">📋</div>
+      <h3 class="card-title">Faça a prova online</h3>
+      <p class="card-desc">A nota e o resultado serão apresentados imediatamente, sem exibição do gabarito.</p>
+      
+      <a href="edital.html" class="btn btn-primary">FAZER PROVA ONLINE ➔</a>
+      <a href="#" class="btn btn-secondary">🔍 CONSULTAR APROVADOS</a>
+    </div>
+
   </main>
 
 </body>
