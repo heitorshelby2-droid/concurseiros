@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth; /* Efeito de rolagem suave nos links internos */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,9 +41,7 @@ body {
   gap: 10px;
 }
 
-.logo-circle {
-  font-size: 24px;
-}
+.logo-circle { font-size: 24px; }
 
 .sub-title {
   font-size: 9px;
@@ -55,10 +57,7 @@ body {
   font-weight: 700;
 }
 
-.nav-icons {
-  display: flex;
-  gap: 8px;
-}
+.nav-icons { display: flex; gap: 8px; }
 
 .icon-btn {
   background: #ffffff;
@@ -118,7 +117,7 @@ body {
   font-weight: bold;
 }
 
-/* Divisor de Seção */
+/* Divisores de Seção */
 .section-divider {
   text-align: center;
   margin-top: -14px;
@@ -142,12 +141,13 @@ body {
   margin: 0 auto;
 }
 
-/* Cards */
+/* Cards Genericos */
 .card {
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: relative;
 }
 
 .card-white {
@@ -195,9 +195,7 @@ body {
   font-size: 18px;
 }
 
-.dark-icon {
-  background-color: rgba(255, 255, 255, 0.1);
-}
+.dark-icon { background-color: rgba(255, 255, 255, 0.1); }
 
 .badge {
   font-size: 9px;
@@ -207,15 +205,9 @@ body {
   letter-spacing: 0.5px;
 }
 
-.badge-green {
-  background-color: #e6f4ea;
-  color: #137333;
-}
-
-.badge-blue {
-  background-color: rgba(255,255,255,0.15);
-  color: #ffffff;
-}
+.badge-green { background-color: #e6f4ea; color: #137333; }
+.badge-blue { background-color: rgba(255,255,255,0.15); color: #ffffff; }
+.badge-gray { background-color: #edf2f7; color: #718096; }
 
 .card-title-lg {
   font-size: 20px;
@@ -232,23 +224,11 @@ body {
 
 .text-white { color: #ffffff; }
 .text-light { color: #cbd5e0; }
+.text-blue-dark { color: #0f2b48; }
 
-.info-group {
-  margin-bottom: 8px;
-}
-
-.info-label {
-  display: block;
-  font-size: 9px;
-  font-weight: 800;
-  color: #718096;
-}
-
-.info-value {
-  font-size: 12px;
-  font-weight: 600;
-  color: #2d3748;
-}
+.info-group { margin-bottom: 8px; }
+.info-label { display: block; font-size: 9px; font-weight: 800; color: #718096; }
+.info-value { font-size: 12px; font-weight: 600; color: #2d3748; }
 
 /* Botões */
 .btn {
@@ -261,20 +241,76 @@ body {
   font-weight: 800;
 }
 
-.full-width {
+.full-width { display: block; width: 100%; margin-top: 12px; }
+.btn-gold { background-color: #d69e2e; color: #ffffff; }
+.btn-outline { background-color: transparent; color: #0f2b48; border: 1px solid #cbd5e0; }
+
+/* Seção Especializadas */
+.section-header-block {
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
+.section-tag-gold {
+  color: #d69e2e;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
   display: block;
-  width: 100%;
-  margin-top: 12px;
+  margin-bottom: 4px;
 }
 
-.btn-gold {
-  background-color: #d69e2e;
-  color: #ffffff;
-}
+.uppercase { text-transform: uppercase; }
 
-/* Quadrado transparente com borda */
-.btn-outline {
-  background-color: transparent;
+.section-title-blue {
+  font-size: 22px;
   color: #0f2b48;
-  border: 1px solid #cbd5e0;
+  font-weight: 700;
+  margin-bottom: 6px;
 }
+
+.section-desc-gray {
+  font-size: 13px;
+  color: #718096;
+  margin-bottom: 10px;
+}
+
+.link-blue {
+  color: #0f2b48;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.card-spec { padding-top: 16px; }
+
+.spec-number {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 32px;
+  font-weight: 800;
+  color: #edf2f7;
+}
+
+.spec-title-area { display: flex; align-items: center; gap: 8px; }
+.shield-icon { font-size: 16px; }
+.spec-code { font-size: 18px; color: #0f2b48; font-weight: 800; }
+.spec-name { font-size: 13px; color: #718096; margin-bottom: 14px; }
+.inline-badge { display: inline-block; margin-bottom: 16px; }
+.link-blue-card { display: block; color: #0f2b48; text-decoration: none; font-weight: bold; font-size: 12px; }
+
+/* Instituição Card */
+.instituicao-card { margin-top: 24px; padding: 24px 20px; }
+.balance-icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #d69e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+.link-blue-bold { color: #0f2b48; text-decoration: none; font-weight: 800; font-size: 13px; display: inline-block; margin-top: 10px; }
