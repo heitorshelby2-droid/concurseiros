@@ -3,54 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edital de Inscrição</title>
+  <title>Edital Concurseiros | Portal Institucional</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- CABEÇALHO -->
+  <div class="top-bar">AMBIENTE DE SIMULAÇÃO <span>—</span> Portal fictício para GTA RP — sem vínculo com órgão público real</div>
   <header class="navbar">
-    <div class="logo-area">
-      <div class="logo-circle">🛡️</div>
-      <div>
-        <span class="sub-title">PORTAL INSTITUCIONAL</span>
-        <h1 class="main-title">Concurseiros Brasil</h1>
-      </div>
-    </div>
-    <button class="icon-btn">🔒</button>
+    <a class="brand" href="index.html"><div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6-8 10-8 10Z"/></svg></div><div><span class="brand-kicker">PORTAL INSTITUCIONAL</span><strong>Concurseiros Brasil</strong></div></a>
+    <nav class="desktop-nav"><a href="index.html">Edital Concurseiros</a><a href="index.html#corregedoria">Corregedoria</a><a href="index.html#agenda">Agenda</a><a href="index.html#deac">DEAC</a><a href="#acesso">Acesso administrativo</a></nav>
+    <button class="menu-button" id="menuButton">☰</button>
   </header>
+  <div class="mobile-menu" id="mobileMenu"><a href="index.html">Voltar ao portal</a><a href="index.html#corregedoria">Corregedoria</a><a href="index.html#agenda">Agenda</a><a href="index.html#deac">DEAC</a></div>
 
-  <!-- BANNER AZUL ESCURO -->
-  <section class="hero-banner">
-    <a href="index.html" class="back-link">❮ VOLTAR AO PORTAL</a>
-    <div class="section-tag">🛡️ INGRESSO NA CORPORAÇÃO</div>
-    <h2 class="hero-title">Edital Concurseiros</h2>
-    <p class="hero-desc">Consulte o edital vigente, faça sua inscrição, realize a prova objetiva e acompanhe todas as etapas do concurso.</p>
+  <section class="inner-hero">
+    <div class="page-wrap reveal"><a class="back-link" href="index.html">‹ VOLTAR AO PORTAL</a><div class="eyebrow">◆ INGRESSO NA CORPORAÇÃO</div><h1>Edital Concurseiros</h1><p>Consulte o edital vigente, faça sua inscrição, realize a prova objetiva e acompanhe todas as etapas do concurso.</p></div>
   </section>
 
-  <!-- CONTEÚDO DA PÁGINA DO EDITAL -->
-  <main class="container">
-    
-    <!-- CARD CONCURSO FECHADO -->
-    <div class="card card-status">
-      <h3 class="status-title">CONCURSO FECHADO</h3>
-      <p class="status-desc">As datas serão publicadas pela comissão responsável.</p>
-    </div>
+  <main class="page-wrap inner-page">
+    <div class="card status-alert reveal"><b>CONCURSO FECHADO</b><span>As datas serão publicadas pela comissão responsável.</span></div>
 
-    <!-- CARD FAÇA A PROVA ONLINE -->
-    <div class="card card-white">
-      <div class="card-icon-box">📋</div>
-      <h3 class="card-title-lg">Faça a prova online</h3>
-      <p class="card-desc">A nota e o resultado serão apresentados imediatamente, sem exibição do gabarito.</p>
-      
-      <!-- O LINK ABAIXO ABRE O PDF OU URL. COLOQUE O LINK DESEJADO EM href="" -->
-      <a href="https://exemplo.com/sua-prova.pdf" target="_blank" class="btn btn-gold full-width">FAZER PROVA ONLINE ➔</a>
-      
-      <!-- BOTÃO QUADRADO TRANSPARENTE -->
-      <a href="#" class="btn btn-outline full-width">🔍 CONSULTAR APROVADOS</a>
-    </div>
+    <section class="card reveal">
+      <div class="icon-box">▣</div><h2>Faça a prova online</h2><p>A nota e o resultado serão apresentados imediatamente, sem exibição do gabarito.</p>
+      <button class="btn btn-gold full" id="examButton">FAZER PROVA ONLINE <b>→</b></button>
+      <button class="btn btn-outline full" id="approvedButton">⌕ CONSULTAR APROVADOS</button>
+    </section>
 
+    <section class="feature-card reveal">
+      <div class="section-kicker">CALENDÁRIO</div><h2>Etapas do processo</h2>
+      <div class="timeline">
+        <div><span>01</span><b>Período do edital e da prova</b><small>Data a definir</small></div>
+        <div><span>02</span><b>TAF — 1ª chamada</b><small>Data a definir</small></div>
+        <div><span>03</span><b>TAF — 2ª chamada</b><small>Data a definir</small></div>
+        <div><span>04</span><b>TAF — 3ª chamada</b><small>Data a definir</small></div>
+      </div>
+    </section>
+
+    <section class="feature-card reveal">
+      <div class="section-kicker">DOCUMENTOS E ORIENTAÇÕES DO CANDIDATO</div>
+      <h2>Informações deste edital</h2>
+      <div class="document-row"><div><b>Informações deste edital</b><span>Arquivo ainda não publicado.</span></div><strong>INDISPONÍVEL</strong></div>
+      <div class="document-row"><div><b>Uniforme para apresentação</b><span>Arquivo ainda não publicado.</span></div><strong>INDISPONÍVEL</strong></div>
+      <div class="document-row"><div><b>Local de apresentação para o TAF</b><span>Arquivo ainda não publicado.</span></div><strong>INDISPONÍVEL</strong></div>
+    </section>
   </main>
-
+  <footer class="footer"><div class="footer-inner"><div class="footer-bottom">Projeto fictício para GTA RP. Não possui vínculo com órgãos governamentais reais.<strong>Desenvolvido por Hudson Santos</strong></div></div></footer>
+  <div class="toast" id="toast">O concurso está fechado no momento.</div>
+  <script src="script.js"></script>
 </body>
 </html>
