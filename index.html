@@ -8,45 +8,76 @@
 </head>
 <body>
 
+  <!-- BARRA SUPERIOR DE SIMULAÇÃO -->
+  <div class="top-bar">
+    AMBIENTE DE SIMULAÇÃO &nbsp;—&nbsp; Portal fictício para GTA RP
+  </div>
+
   <!-- CABEÇALHO -->
   <header class="navbar">
     <div class="logo-area">
-      <div class="logo-icon">🛡️</div>
+      <div class="logo-circle">🛡️</div>
       <div>
-        <span class="sub-title">PORTAL INSTITUCIONAL</span>
+        <span class="sub-title">PORTAL INSTITUTIONAL</span>
         <h1 class="main-title">Concurseiros Brasil</h1>
       </div>
     </div>
-    <button class="lock-btn">🔒</button>
+    <div class="nav-icons">
+      <button class="icon-btn">🔒</button>
+      <button class="icon-btn">☰</button>
+    </div>
   </header>
 
-  <!-- BANNER ESCURO -->
+  <!-- BANNER PRINCIPAL (HERO) -->
   <section class="hero-banner">
-    <a href="#" class="back-link">❮ VOLTAR AO PORTAL</a>
-    <div class="section-tag">
-      <span>🛡️</span> INGRESSO NA CORPORAÇÃO
+    <div class="section-tag">🛡️ COMPROMISSO, DISCIPLINA E PROTEÇÃO</div>
+    <h2 class="hero-title">Portal Institucional</h2>
+    <p class="hero-desc">Informação, formação e transparência reunidas em um único portal. Consulte seleções, serviços institucionais e canais oficiais.</p>
+    
+    <div class="hero-buttons">
+      <a href="#servicos" class="btn btn-gold">ACESSAR SERVIÇOS ➔</a>
+      <a href="#" class="link-hero">CONHECER O PORTAL ❯</a>
     </div>
-    <h2 class="hero-title">Edital de Seleção</h2>
-    <p class="hero-desc">Consulte o edital vigente, faça a sua inscrição, realize a prova objetiva e acompanhe todas as etapas do concurso.</p>
   </section>
 
-  <!-- CONTEÚDO PRINCIPAL (CARDS) -->
+  <div class="section-divider" id="servicos">
+    <span>PRINCIPAIS SERVIÇOS</span>
+  </div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
   <main class="container">
     
-    <!-- CARD CONCURSO FECHADO -->
-    <div class="card status-card">
-      <h3 class="status-title">CONCURSO FECHADO</h3>
-      <p class="status-desc">As datas serão publicadas pela comissão responsável.</p>
+    <!-- CARD 1: EDITAL SELEÇÃO -->
+    <div class="card card-white">
+      <div class="card-header">
+        <div class="card-icon-box">📄</div>
+        <span class="badge badge-green">EDITAL ABERTO</span>
+      </div>
+      <h3 class="card-title-lg">Edital Concurseiros</h3>
+      <p class="card-desc">Inscreva-se no concurso de ingresso, realize a prova e acompanhe todas as etapas do processo seletivo.</p>
+      
+      <div class="info-group">
+        <span class="info-label">INSCRIÇÕES ATÉ</span>
+        <span class="info-value">02/10/2026, 12:00</span>
+      </div>
+      <div class="info-group">
+        <span class="info-label">PRÓXIMA ETAPA</span>
+        <span class="info-value">Prova objetiva</span>
+      </div>
+
+      <a href="edital.html" class="btn btn-gold full-width">ACESSAR EDITAL E INSCRIÇÃO ➔</a>
     </div>
 
-    <!-- CARD FAÇA A PROVA ONLINE -->
-    <div class="card action-card">
-      <div class="card-icon">📋</div>
-      <h3 class="card-title">Faça a prova online</h3>
-      <p class="card-desc">A nota e o resultado serão apresentados imediatamente, sem exibição do gabarito.</p>
-      
-      <a href="edital.html" class="btn btn-primary">FAZER PROVA ONLINE ➔</a>
-      <a href="#" class="btn btn-secondary">🔍 CONSULTAR APROVADOS</a>
+    <!-- CARD 2: CORREGEDORIA / DENÚNCIAS -->
+    <div class="card card-dark">
+      <div class="card-header">
+        <div class="card-icon-box dark-icon">🛡️</div>
+        <span class="badge badge-blue">CANAL PERMANENTE</span>
+      </div>
+      <h3 class="card-title-lg text-white">Corregedoria</h3>
+      <p class="card-desc text-light">Registre uma denúncia, elogio ou sugestão de forma anônima, e acompanhe o resultado do procedimento.</p>
+
+      <a href="#" class="btn btn-gold full-width">FAZER DENÚNCIA ➔</a>
     </div>
 
   </main>
