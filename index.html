@@ -16,7 +16,11 @@
   <!-- CABEÇALHO -->
   <header class="navbar">
     <div class="logo-area">
-      <div class="logo-circle">🛡️</div>
+      <div class="logo-circle">
+        <svg class="gold-shield-icon" viewBox="0 0 24 24" fill="none" stroke="#d69e2e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+        </svg>
+      </div>
       <div>
         <span class="sub-title">PORTAL INSTITUCIONAL</span>
         <h1 class="main-title">Concurseiros Brasil</h1>
@@ -30,14 +34,17 @@
 
   <!-- BANNER PRINCIPAL (HERO) -->
   <section class="hero-banner">
-    <div class="section-tag">🛡️ COMPROMISSO, DISCIPLINA E PROTEÇÃO</div>
+    <div class="section-tag">
+      <svg class="gold-shield-icon-sm" viewBox="0 0 24 24" fill="none" stroke="#d69e2e" stroke-width="2">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+      </svg>
+      COMPROMISSO, DISCIPLINA E PROTEÇÃO
+    </div>
     <h2 class="hero-title">Portal Institucional</h2>
     <p class="hero-desc">Informação, formação e transparência reunidas em um único portal. Consulte seleções, serviços institucionais e canais oficiais.</p>
     
     <div class="hero-buttons">
-      <!-- Rola a tela até a seção de principais serviços -->
       <a href="#servicos" class="btn btn-gold">ACESSAR SERVIÇOS ➔</a>
-      <!-- Rola a tela até a seção da instituição/documentos -->
       <a href="#instituicao" class="link-hero">CONHECER O PORTAL ❯</a>
     </div>
   </section>
@@ -47,11 +54,11 @@
     <span>PRINCIPAIS SERVIÇOS</span>
   </div>
 
-  <!-- CONTEÚDO PRINCIPAL (CARDS) -->
+  <!-- CONTEÚDO PRINCIPAL -->
   <main class="container">
     
     <!-- CARD 1: EDITAL SELEÇÃO -->
-    <div class="card card-white">
+    <div class="card card-white card-interactive">
       <div class="card-header">
         <div class="card-icon-box">📄</div>
         <span class="badge badge-green">EDITAL ABERTO</span>
@@ -72,9 +79,13 @@
     </div>
 
     <!-- CARD 2: CORREGEDORIA / DENÚNCIAS -->
-    <div class="card card-dark">
+    <div class="card card-dark card-interactive">
       <div class="card-header">
-        <div class="card-icon-box dark-icon">🛡️</div>
+        <div class="card-icon-box dark-icon">
+          <svg class="gold-shield-icon" viewBox="0 0 24 24" fill="none" stroke="#d69e2e" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+        </div>
         <span class="badge badge-blue">CANAL PERMANENTE</span>
       </div>
       <h3 class="card-title-lg text-white">Corregedoria</h3>
@@ -92,81 +103,7 @@
     </div>
 
     <!-- CARD ESPECIALIZADA 01 -->
-    <div class="card card-white card-spec">
+    <div class="card card-white card-spec card-interactive">
       <span class="spec-number">01</span>
-      <div class="card-header">
-        <div class="spec-title-area">
-          <span class="shield-icon">🛡️</span>
-          <h3 class="spec-code">IOPE</h3>
-        </div>
-      </div>
-      <p class="spec-name">Inspetoria de Operações Especiais</p>
-      <span class="badge badge-green inline-badge">INSCRIÇÕES ABERTAS</span>
-      <a href="#" class="link-blue-card">Ver seleção ➔</a>
-    </div>
-
-    <!-- CARD ESPECIALIZADA 02 -->
-    <div class="card card-white card-spec">
-      <span class="spec-number">02</span>
-      <div class="card-header">
-        <div class="spec-title-area">
-          <span class="shield-icon">🛡️</span>
-          <h3 class="spec-code">IAMO</h3>
-        </div>
-      </div>
-      <p class="spec-name">Inspetoria de Apoio Motorizado</p>
-      <span class="badge badge-green inline-badge">INSCRIÇÕES ABERTAS</span>
-      <a href="#" class="link-blue-card">Ver seleção ➔</a>
-    </div>
-
-    <!-- CARD ESPECIALIZADA 03 -->
-    <div class="card card-white card-spec">
-      <span class="spec-number">03</span>
-      <div class="card-header">
-        <div class="spec-title-area">
-          <span class="shield-icon">🛡️</span>
-          <h3 class="spec-code">IDAM</h3>
-        </div>
-      </div>
-      <p class="spec-name">Inspetoria de Defesa Ambiental</p>
-      <span class="badge badge-green inline-badge">INSCRIÇÕES ABERTAS</span>
-      <a href="#" class="link-blue-card">Ver seleção ➔</a>
-    </div>
-
-    <!-- CARD ESPECIALIZADA 04 -->
-    <div class="card card-white card-spec">
-      <span class="spec-number">04</span>
-      <div class="card-header">
-        <div class="spec-title-area">
-          <span class="shield-icon">🛡️</span>
-          <h3 class="spec-code">IATE</h3>
-        </div>
-      </div>
-      <p class="spec-name">Inspetoria de Ações Táticas Especiais</p>
-      <span class="badge badge-gray inline-badge">SEM EDITAL ABERTO</span>
-      <a href="#" class="link-blue-card">Ver seleção ➔</a>
-    </div>
-
-    <!-- SEÇÃO NOSSA INSTITUIÇÃO (ALVO DO BOTÃO "CONHECER O PORTAL") -->
-    <div id="instituicao" class="card card-white instituicao-card">
-      <div class="balance-icon-circle">⚖️</div>
-      <span class="section-tag-gold uppercase">NOSSA INSTITUIÇÃO</span>
-      <h2 class="card-title-lg text-blue-dark">Servir e proteger com excelência</h2>
-      <p class="card-desc">A corporação atua com disciplina, preparo técnico e integração entre suas unidades, valorizando a formação contínua e a qualidade do serviço prestado.</p>
-      <a href="#" class="link-blue-bold">Conheça nossa estrutura ➔</a>
-    </div>
-
-    <!-- CARD CENTRAL DE DOCUMENTOS -->
-    <div class="card card-dark">
-      <div class="card-header">
-        <div class="card-icon-box dark-icon">📋</div>
-      </div>
-      <h3 class="card-title-lg text-white">Central de documentos</h3>
-      <p class="card-desc text-light">Regulamentos, manuais operacionais, editais e materiais da Escola de Formação.</p>
-      <a href="#" class="btn btn-gold full-width">CONSULTAR DOCUMENTOS</a>
-    </div>
-
-  </main>
-
-</body>
-</html>
+      <div class="spec-title-area">
+        <svg class="gold-shield-svg" viewBox="0 0 24 24" fill="none" stroke="#d

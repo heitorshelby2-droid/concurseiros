@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth; /* Efeito de rolagem suave nos links internos */
+  scroll-behavior: smooth;
 }
 
 * {
@@ -41,7 +41,13 @@ body {
   gap: 10px;
 }
 
-.logo-circle { font-size: 24px; }
+.logo-circle {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .sub-title {
   font-size: 9px;
@@ -89,6 +95,9 @@ body {
   font-weight: 800;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .hero-title {
@@ -141,23 +150,38 @@ body {
   margin: 0 auto;
 }
 
-/* Cards Genericos */
+/* Base dos Cards */
 .card {
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   position: relative;
+  border: 1px solid #e2e8f0;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Efeito Interativo ao Clicar / Passar o Mouse (Igual ao site base) */
+.card-interactive {
+  cursor: pointer;
+}
+
+.card-interactive:hover,
+.card-interactive:active,
+.card-interactive:focus-within {
+  border-color: #d69e2e !important;
+  box-shadow: 0 0 0 1px #d69e2e, 0 4px 12px rgba(214, 158, 46, 0.15) !important;
+  transform: translateY(-2px);
 }
 
 .card-white {
   background-color: #ffffff;
-  border: 1px solid #e2e8f0;
 }
 
 .card-dark {
   background: linear-gradient(180deg, #0f2b48 0%, #0b1829 100%);
   color: #ffffff;
+  border-color: transparent;
 }
 
 .card-status {
@@ -286,15 +310,35 @@ body {
 
 .spec-number {
   position: absolute;
-  top: 10px;
+  top: 14px;
   right: 16px;
   font-size: 32px;
   font-weight: 800;
   color: #edf2f7;
 }
 
-.spec-title-area { display: flex; align-items: center; gap: 8px; }
-.shield-icon { font-size: 16px; }
+.spec-title-area {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.gold-shield-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.gold-shield-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.gold-shield-icon-sm {
+  width: 14px;
+  height: 14px;
+}
+
 .spec-code { font-size: 18px; color: #0f2b48; font-weight: 800; }
 .spec-name { font-size: 13px; color: #718096; margin-bottom: 14px; }
 .inline-badge { display: inline-block; margin-bottom: 16px; }
