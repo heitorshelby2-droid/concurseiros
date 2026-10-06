@@ -150,7 +150,7 @@ body {
   margin: 0 auto;
 }
 
-/* Base dos Cards */
+/* Cards Base */
 .card {
   border-radius: 8px;
   padding: 20px;
@@ -158,17 +158,17 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   position: relative;
   border: 1px solid #e2e8f0;
+}
+
+/* ANIMAÇÃO E CLIQUE SOMENTE NAS ESPECIALIZADAS */
+.spec-card-interactive {
+  cursor: pointer;
   transition: all 0.25s ease-in-out;
 }
 
-/* Efeito Interativo ao Clicar / Passar o Mouse (Igual ao site base) */
-.card-interactive {
-  cursor: pointer;
-}
-
-.card-interactive:hover,
-.card-interactive:active,
-.card-interactive:focus-within {
+.spec-card-interactive:hover,
+.spec-card-interactive:active,
+.spec-card-interactive:focus-within {
   border-color: #d69e2e !important;
   box-shadow: 0 0 0 1px #d69e2e, 0 4px 12px rgba(214, 158, 46, 0.15) !important;
   transform: translateY(-2px);
@@ -358,3 +358,78 @@ body {
   margin-bottom: 14px;
 }
 .link-blue-bold { color: #0f2b48; text-decoration: none; font-weight: 800; font-size: 13px; display: inline-block; margin-top: 10px; }
+
+/* ESTILOS DO RODAPÉ */
+.footer-site {
+  background-color: #0b1829;
+  color: #ffffff;
+  padding: 32px 20px 20px 20px;
+  margin-top: 20px;
+}
+
+.footer-container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-subtitle {
+  font-size: 11px;
+  color: #a0aec0;
+}
+
+.footer-heading {
+  color: #d69e2e;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.footer-group {
+  margin-bottom: 20px;
+}
+
+.footer-group ul {
+  list-style: none;
+}
+
+.footer-group li {
+  margin-bottom: 8px;
+}
+
+.footer-group a {
+  color: #cbd5e0;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 16px;
+  margin-top: 20px;
+  font-size: 11px;
+  color: #a0aec0;
+  line-height: 1.5;
+}
+
+.dev-credits {
+  margin-top: 10px;
+  color: #e2e8f0;
+}
+
+.dev-credits strong {
+  color: #d69e2e;
+}
